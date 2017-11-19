@@ -9,7 +9,7 @@ header {
   position: fixed;
   z-index: 1;
   height: 64px;
-  width: 1000px;
+  width: 100%;
   background-color: white;
 }
 
@@ -27,8 +27,9 @@ header {
 
 nav {
   display: flex;
-  width: 1000px;
+  width: 100%;
   justify-content: flex-end;
+  padding-right: 24px;
 }
 
 nav span {
@@ -39,8 +40,8 @@ nav span {
 .headline {
   display: flex;
   align-items: center;
-  height: 500px;
-  width: 1000px;
+  height: auto;
+  width: auto;
   padding-top: 64px;
   background-color: #d8d8d8;
 }
@@ -49,11 +50,13 @@ nav span {
   display: flex;
   padding: 32px 24px;
   width: 60%;
+  height: auto;
+  margin: auto;
 }
 
 .headline-title {
   display: block;
-  width: 300px;
+  width: 40%;
 }
 
 btn {
@@ -70,8 +73,15 @@ btn {
 .information {
   border: 1px solid black;
   display: block;
-  height: 550px;
-  width: 1000px;
+  height: auto;
+  width: auto;
+}
+
+.information .column {
+  display: block;
+  width: 40%;
+  position: absolute;
+  right: 0px;
 }
 
 .info-image {
@@ -87,12 +97,35 @@ btn {
   width: 60%;
 }
 
+.events-container {
+  position: relative;
+  max-width: 40%;
+  margin-left: 45rem;
+  bottom: 33rem;
+}
+
+.event-info {
+  justify-content: center;
+
+}
+
+.event {
+  display: flex;
+  border: 1px solid black;
+}
+.event img {
+  display: block;
+  width: 35%;
+  height: 35%;
+  padding: 16px;
+}
+
 .course-container {
   display: block;
   background-color: #d8d8d8;
-  width: 1000px;
-  height: 800px;
+  width: auto;
   padding: 0 56px;
+
 }
 
 .course {
@@ -100,11 +133,16 @@ btn {
   border: 1px solid black;
   margin: 16px;
   background-color: white;
+  width: 35%;
+}
+
+.row {
+  display: flex;
 }
 
 .course-container .courses {
   display: flex;
-  width: 35%;
+  flex-wrap: wrap;
 }
 
 .course-title {
